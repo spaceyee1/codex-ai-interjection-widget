@@ -2,7 +2,7 @@
 
 适用仓库：**codex-改版小AI插话挂件**，首版 `v1.0.0`。整理日期：2026-10-12。
 
-本次以正在使用的 `0.2.4+membership.5` 应用目录为来源，保留主要功能与原署名，仅为随包默认图适配托盘和插件图标，不把上游成果改称本仓库原创。以下名单汇集当前源码及随附说明中可核实的署名；没有姓名证据的素材，不猜测作者。
+感谢以下项目作者、维护者、依赖贡献者和素材提供者。各项贡献及原署名保留如下；未能确认原作者的素材单独说明。
 
 ## 项目与改版贡献
 
@@ -25,7 +25,7 @@
 
 感谢 **Electron contributors、Chromium authors、Node.js contributors、FFmpeg developers、SwiftShader、Vulkan、DXC / DirectXShaderCompiler contributors** 及相关开源项目作者，也感谢 **Microsoft** 提供 Windows、.NET 与相关系统组件。
 
-当前安装版曾内置 Electron 44.3.0 及其依赖，历史材料见 [完整包许可补充说明](COMPLETE-PACKAGE-NOTICES.md)。**本次 GitHub 源码发布不包含 Electron、Chromium、FFmpeg DLL、Microsoft DLL 或外层 third-party-sources 归档**。开发者自行取得运行组件时应保留其配套许可证和第三方通告；不能用本项目的 MIT 代替这些条件。
+Electron 44.3.0 及其依赖的历史分发说明见 [完整包许可补充说明](COMPLETE-PACKAGE-NOTICES.md)。**本次 GitHub 源码发布不包含 Electron、Chromium、FFmpeg DLL、Microsoft DLL 或外层 third-party-sources 归档**。开发者自行取得运行组件时应保留其配套许可证和第三方通告；不能用本项目的 MIT 代替这些条件。
 
 ## 素材来源与发布范围
 

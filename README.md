@@ -2,7 +2,7 @@
 
 跟随 Codex 桌面窗口的透明伴随挂件，保留小 AI 插话、气泡聊天、API 余额与记账，并增加 Codex 会员与额度展示。
 
-**本仓库首版为 v1.0.0，以当前实际使用版 `0.2.4+membership.5` 为基础。** 本次随包提供用户指定的默认角色 PNG，并将托盘和插件图标指向这张图；主要功能逻辑保持当前版。`package.json` 的 `0.2.4`、原插件构建号及上游链接保留，便于追溯。这里的 v1.0.0 是本仓库的发行编号，不代表上游升级，也没有用较新的上游版本替换正在使用的版本。
+**v1.0.0 首版发布。** 支持小 AI 插话、气泡聊天、桌面跟随和会员额度展示，默认使用下方透明角色图片，托盘与插件图标同步采用这张图。感谢 **[Yang-huai406](https://github.com/Yang-huai406)**、**[MeteorNOX](https://github.com/MeteorNOX)** 及所有相关贡献者，完整名单见[鸣谢](CREDITS.md)。
 
 仓库：[spaceyee1/codex-ai-interjection-widget](https://github.com/spaceyee1/codex-ai-interjection-widget)。本项目为个人改版，与 OpenAI 官方发布无关。
 
@@ -10,13 +10,11 @@
 
 ## 这份发布包含什么
 
-包含实际运行应用的源代码、Codex 插件元数据、原许可文件、`smol-toml` 源码依赖、用户指定的默认角色图片，以及本次发布文档。源文件、发布适配与排除项记录在 [SOURCE-SNAPSHOT.json](SOURCE-SNAPSHOT.json)。
+包含挂件源代码、Codex 插件元数据、原许可文件、`smol-toml` 源码依赖、默认角色图片及使用文档。文件校验与排除项见[文件清单](SOURCE-SNAPSHOT.json)，内部构建标识与验证记录见 [DEBUG.md](DEBUG.md)。
 
 **这是需要自行准备运行条件的源码版。** `assets/default-character.png` 按用户本次明确要求随包发布，并用于默认角色、托盘和插件图标。它与原安装版的默认图同字节；已有自定义角色选择不会被强行重置，切回默认角色会使用这张图。该图片单独登记来源，不纳入代码 MIT，也不把用户提供等同于用户原创。
 
 公开包不包含其余 **10 个上游图片、动图和音效**，也不包含 Electron、离线安装 EXE、用户配置、密钥、账本、聊天记录或本机运行日志。现有材料不足以证明这 10 个上游媒体可以在这个新仓库公开再分发，因此仅登记来源和哈希；这不等于认定素材侵权。需要原气泡动图或预设音效时，应自行准备有权使用的资源；未准备时不要选用相应预设，并关闭相应音效。资源要求见 [ASSETS.md](ASSETS.md)。
-
-本次发布没有改动、停止或重装作者本机正在使用的挂件。
 
 ## 功能
 
@@ -29,7 +27,7 @@
 | 气泡通知 | 默认摘要和每轮通知可展示会员额度；用户自定义首页继续保留。 |
 | 素材管理 | 用户指定的默认角色随包提供；保留角色、泡泡图和音效导入及管理代码，其余原预设资源需自行补充或停用。 |
 
-该源码版本的会员展示规则包括 Plus 的 5 小时窗口，以及对 Pro 类套餐隐藏该窗口的处理。这是当前快照的实现规则，不代表官方套餐政策的永久保证；识别接口和显示行为仍需随宿主变化验证。
+本版会员展示包括 Plus 的 5 小时窗口，以及对 Pro 类套餐隐藏该窗口的处理。识别接口和显示行为仍需随宿主变化验证，具体套餐政策以官方为准。
 
 ## Windows 手动部署
 
@@ -67,7 +65,7 @@ powershell.exe -NoProfile -File .\scripts\uninstall-follow.ps1 -DataDir "$whaleD
 
 脚本会停用匹配本源码路径的自动跟随任务，保留数据。不要使用其他安装目录的回滚脚本处理当前实例。
 
-macOS 的 Swift 窗口探针与 LaunchAgent 源码保留了上游贡献，但当前快照来自 Windows 运行实例。旧 macOS 安装器仍依赖特定 Electron 布局，而离线组件检查脚本不适用于新 Mac 安装；本首版不提供已验证的 macOS 安装流程。
+macOS 的 Swift 窗口探针与 LaunchAgent 源码保留了上游贡献；本版只核对了 Windows 环境。旧 macOS 安装器仍依赖特定 Electron 布局，而离线组件检查脚本不适用于新 Mac 安装；本首版不提供已验证的 macOS 安装流程。
 
 ## 数据与网络
 
@@ -93,4 +91,4 @@ macOS 的 Swift 窗口探针与 LaunchAgent 源码保留了上游贡献，但当
 
 本次发布范围、部署步骤以 **本 README、[DEBUG.md](DEBUG.md)、[CREDITS.md](CREDITS.md)、[ASSETS.md](ASSETS.md)** 为准；许可义务仍以对应许可原文为准。
 
-[原安装版 README](docs/INSTALLED-README.md)、[原使用说明](用户使用方式.md)、[历史会员扩展 Debug](docs/MEMBERSHIP-ADDON-DEBUG.md)、[PROVENANCE](PROVENANCE.md) 和 [完整包许可说明](COMPLETE-PACKAGE-NOTICES.md) 按原字节保存，作为历史快照。它们提到的旧 EXE、媒体、运行组件、测试次数或缺失的旧文档，不能据此认定已包含在本次发布，或已经在本次重新验证。
+[历史 README](docs/INSTALLED-README.md)、[原使用说明](用户使用方式.md)、[历史会员扩展 Debug](docs/MEMBERSHIP-ADDON-DEBUG.md)、[PROVENANCE](PROVENANCE.md) 和 [完整包许可说明](COMPLETE-PACKAGE-NOTICES.md) 保留原文。它们提到的旧 EXE、媒体、运行组件、测试次数或缺失的旧文档，不能据此认定已包含在本次发布，或已经在本次重新验证。
