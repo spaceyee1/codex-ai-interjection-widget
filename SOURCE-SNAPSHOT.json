@@ -1,0 +1,712 @@
+{
+  "release": "v1.0.0",
+  "captureDate": "2026-10-12",
+  "sourceVersion": "0.2.4+membership.5",
+  "sourceKind": "snapshot of the currently running local Codex widget app",
+  "notes": "This repository release retains installed runtime versions. Original source hashes are recorded in sha256; two icon-reference adaptations have separate publishedSha256 values. The user-supplied default character is included; ten upstream media files remain excluded. New release documentation is outside the installed-source manifest.",
+  "files": [
+    {
+      "sourcePath": ".codex-plugin/plugin.json",
+      "bytes": 2278,
+      "sha256": "dd63071e94cf6aaac2f9687ec24761a0f63ce8aa7e3050f716e81821d7d9441e",
+      "publishedPath": ".codex-plugin/plugin.json",
+      "publishedSha256": "5a28503e9a383d0a775988b5905f57a4050981890c3180b800258a283222e889",
+      "releaseChange": "Use the user-supplied default character for the tray or plugin icons instead of an excluded upstream image."
+    },
+    {
+      "sourcePath": ".mcp.json",
+      "bytes": 128,
+      "sha256": "cabb916c7760de8d6a21f9b8f46616fca1052c98d8522151e8aef316dd7b8aa3",
+      "publishedPath": ".mcp.json"
+    },
+    {
+      "sourcePath": "COMPLETE-PACKAGE-NOTICES.md",
+      "bytes": 6431,
+      "sha256": "f13803bf21af06212e3f5fc40779ba2719e58bb73880fb649484f3072e81d641",
+      "publishedPath": "COMPLETE-PACKAGE-NOTICES.md"
+    },
+    {
+      "sourcePath": "LICENSE",
+      "bytes": 1066,
+      "sha256": "a1e46acc1349f63e9d1e26a8a600823e010fedcaff20fc1eceb6564432bf829b",
+      "publishedPath": "LICENSE"
+    },
+    {
+      "sourcePath": "PROVENANCE.md",
+      "bytes": 4462,
+      "sha256": "b115dad87da6487ff16b61a1637301a45cc0160f54121a49188f5b2f513adb28",
+      "publishedPath": "PROVENANCE.md"
+    },
+    {
+      "sourcePath": "README.md",
+      "bytes": 12962,
+      "sha256": "5230f1e3c23a322282690ecb478d5c805945463e0f987ce6e1322fadf1ef9485",
+      "publishedPath": "docs/INSTALLED-README.md"
+    },
+    {
+      "sourcePath": "SECURITY.md",
+      "bytes": 3244,
+      "sha256": "09ab1c325052d35f4a297c5a2cce08da72bdca42218be26cb94d91bba2f23c99",
+      "publishedPath": "SECURITY.md"
+    },
+    {
+      "sourcePath": "THIRD_PARTY_NOTICES.md",
+      "bytes": 912,
+      "sha256": "13000929d7ece3c2695fcd08aca09db749a4e7a3d07edaaa90cfc0b076ae0a91",
+      "publishedPath": "THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "sourcePath": "assets/D1.mp3",
+      "bytes": 3294,
+      "sha256": "626c0fb5dbfb2529331b98b80fa29961efbcbef6a454b36328481b61d8a0c7be",
+      "publishedPath": null,
+      "excludedReason": "Media redistribution permission for this derivative repository has not been established; not included in public source release."
+    },
+    {
+      "sourcePath": "assets/D2.mp3",
+      "bytes": 4232,
+      "sha256": "8327a07da3ec17f42ec6dddec8f6e2862055c7bfa5e15e3908442c517fd0f22d",
+      "publishedPath": null,
+      "excludedReason": "Media redistribution permission for this derivative repository has not been established; not included in public source release."
+    },
+    {
+      "sourcePath": "assets/DSH2.png",
+      "bytes": 1103533,
+      "sha256": "9286302f2d8729c35576800640333e7f171deca78b1bec0a9b8d25cb83cc437b",
+      "publishedPath": null,
+      "excludedReason": "Media redistribution permission for this derivative repository has not been established; not included in public source release."
+    },
+    {
+      "sourcePath": "assets/DSniang02.png",
+      "bytes": 466452,
+      "sha256": "bfcdac201b183bd31cc154a9d5425dfa5c946fbbc4d6584b890b7e538776eb0d",
+      "publishedPath": null,
+      "excludedReason": "Media redistribution permission for this derivative repository has not been established; not included in public source release."
+    },
+    {
+      "sourcePath": "assets/DSniang1.png",
+      "bytes": 255988,
+      "sha256": "dcc456613dbb1102a4b7ef636a8b622371e33b763489d6249c434fb54248ba5c",
+      "publishedPath": null,
+      "excludedReason": "Media redistribution permission for this derivative repository has not been established; not included in public source release."
+    },
+    {
+      "sourcePath": "assets/Ya1.mp3",
+      "bytes": 6370,
+      "sha256": "0ad8f934ae5fa3cbd42745e086a56aa6532766618c6a620b860a795bdc7689f9",
+      "publishedPath": null,
+      "excludedReason": "Media redistribution permission for this derivative repository has not been established; not included in public source release."
+    },
+    {
+      "sourcePath": "assets/Ya2.mp3",
+      "bytes": 2976,
+      "sha256": "1a8998077e5e306c3088bb442ce36617261dd58200754f457469a520801c565b",
+      "publishedPath": null,
+      "excludedReason": "Media redistribution permission for this derivative repository has not been established; not included in public source release."
+    },
+    {
+      "sourcePath": "assets/bubble-petpet.gif",
+      "bytes": 94643,
+      "sha256": "0b9dd76db4ea86ce3d3b07a56054ad33f25f6eb7a320472a4810859f183fc332",
+      "publishedPath": null,
+      "excludedReason": "Media redistribution permission for this derivative repository has not been established; not included in public source release."
+    },
+    {
+      "sourcePath": "assets/bubble-yue-money.gif",
+      "bytes": 490781,
+      "sha256": "48f6c9ba8a6314c6b55e2c2f243512e72ad0a8f8aebe4fa146018f670120d168",
+      "publishedPath": null,
+      "excludedReason": "Media redistribution permission for this derivative repository has not been established; not included in public source release."
+    },
+    {
+      "sourcePath": "assets/default-character.png",
+      "bytes": 1387209,
+      "sha256": "d2ce48591f195d27f1473b4695b0ad8bcc288ce055b141f2e827fedca456133e",
+      "publishedPath": "assets/default-character.png",
+      "provenance": "User supplied this exact image and explicitly requested it as the default character for this release; not relicensed under the software MIT license."
+    },
+    {
+      "sourcePath": "assets/rua.gif",
+      "bytes": 94643,
+      "sha256": "0b9dd76db4ea86ce3d3b07a56054ad33f25f6eb7a320472a4810859f183fc332",
+      "publishedPath": null,
+      "excludedReason": "Media redistribution permission for this derivative repository has not been established; not included in public source release."
+    },
+    {
+      "sourcePath": "assets/whale-widget.js",
+      "bytes": 494341,
+      "sha256": "f1ae581ddf49e5357ddb58905ee3b1317963f26650b381c595b6b5357ad83f04",
+      "publishedPath": "assets/whale-widget.js"
+    },
+    {
+      "sourcePath": "desktop/WhaleLauncher.cs",
+      "bytes": 8601,
+      "sha256": "55873725c735eb80ad33e84fac932d9f960c99a3dbc2e897b1d7b9b285449b62",
+      "publishedPath": "desktop/WhaleLauncher.cs"
+    },
+    {
+      "sourcePath": "desktop/WindowApi.cs",
+      "bytes": 15099,
+      "sha256": "08c30f9353963b82b2d78d3a174c77cc1ae0607a2c540031fd4381c6ba8cba3a",
+      "publishedPath": "desktop/WindowApi.cs"
+    },
+    {
+      "sourcePath": "desktop/chat-controller.cjs",
+      "bytes": 14931,
+      "sha256": "6cbd3974f9adde94c7b298ff1ffab7efac80b82712c32784c74c1eeffd54ab0d",
+      "publishedPath": "desktop/chat-controller.cjs"
+    },
+    {
+      "sourcePath": "desktop/chat-preload.cjs",
+      "bytes": 270,
+      "sha256": "9d53ffaa02d2179eb283e2498e990eadc19dbcaa5dd5a350aa01c51c971243bd",
+      "publishedPath": "desktop/chat-preload.cjs"
+    },
+    {
+      "sourcePath": "desktop/companion-debug.cjs",
+      "bytes": 3364,
+      "sha256": "c8dab2440bac8fe47fcf278c8707bc38d99e5b771ca098e312439f156886dfa0",
+      "publishedPath": "desktop/companion-debug.cjs"
+    },
+    {
+      "sourcePath": "desktop/external-links.cjs",
+      "bytes": 433,
+      "sha256": "48d5c7de39e8c37ab0c4a1024915703d9a946bfdfa3a765df4359e55a9e509e8",
+      "publishedPath": "desktop/external-links.cjs"
+    },
+    {
+      "sourcePath": "desktop/interjection-delivery.cjs",
+      "bytes": 1911,
+      "sha256": "3b2dc820a0918e22a061818c60e400a9ff309669fa96a57055f2007f0f436f30",
+      "publishedPath": "desktop/interjection-delivery.cjs"
+    },
+    {
+      "sourcePath": "desktop/lifecycle.cjs",
+      "bytes": 1417,
+      "sha256": "3560ddbd072abad10c76d41d0b0d823d98abe678f86a70567d7f1c38aabe02a4",
+      "publishedPath": "desktop/lifecycle.cjs"
+    },
+    {
+      "sourcePath": "desktop/local-text.cjs",
+      "bytes": 1678,
+      "sha256": "ebed1a5f9399cc096919e53a3c3833e28b6fb51fe729c7e985dd01bca1d569b4",
+      "publishedPath": "desktop/local-text.cjs"
+    },
+    {
+      "sourcePath": "desktop/local-text.ps1",
+      "bytes": 3975,
+      "sha256": "5fe54489f9f87d943301bf92dae76302e6cd25cf7d0cadda89599cb489bbcfb1",
+      "publishedPath": "desktop/local-text.ps1"
+    },
+    {
+      "sourcePath": "desktop/macos/supervisor.mjs",
+      "bytes": 12466,
+      "sha256": "ec6d578a99847fb203fecb146fcd2deeb4ca3e07f691c2472f77d9dc95ef9e0c",
+      "publishedPath": "desktop/macos/supervisor.mjs"
+    },
+    {
+      "sourcePath": "desktop/macos/window-probe.swift",
+      "bytes": 7689,
+      "sha256": "4deede402db88bcf316780d10a6f5f2e268e6e2e7e1da4816b4bd363605925d8",
+      "publishedPath": "desktop/macos/window-probe.swift"
+    },
+    {
+      "sourcePath": "desktop/main.cjs",
+      "bytes": 25407,
+      "sha256": "128fa451e969baf57131a0082dced64f088d4843f4669d315716a8cd4a72e210",
+      "publishedPath": "desktop/main.cjs",
+      "publishedSha256": "ca70412e4267c6789136bda389c6e9f45f0b04ad280cae1f03ef3a0f8e945aa0",
+      "releaseChange": "Use the user-supplied default character for the tray or plugin icons instead of an excluded upstream image."
+    },
+    {
+      "sourcePath": "desktop/preload.cjs",
+      "bytes": 2221,
+      "sha256": "b9828b6a1c57b0e3037c2bdd4271182e66e7862ec73ef2c4331223ef212c3dc3",
+      "publishedPath": "desktop/preload.cjs"
+    },
+    {
+      "sourcePath": "desktop/supervisor.ps1",
+      "bytes": 9175,
+      "sha256": "f44cf56ef1fc0e0fd7a4a1db21e078160a88a430fecbf09793f9a1bd387d7c7a",
+      "publishedPath": "desktop/supervisor.ps1"
+    },
+    {
+      "sourcePath": "desktop/ui-state-store.cjs",
+      "bytes": 1438,
+      "sha256": "554169891ecd58b8d8ed4931b2bbb0892ff0dafadb29b068eaae63c84447b2df",
+      "publishedPath": "desktop/ui-state-store.cjs"
+    },
+    {
+      "sourcePath": "desktop/ui/adaptive-bubble.js",
+      "bytes": 5023,
+      "sha256": "3016f5be59c8fc92127638e6871cd2b3620e46718f172263814779f1cdc7a291",
+      "publishedPath": "desktop/ui/adaptive-bubble.js"
+    },
+    {
+      "sourcePath": "desktop/ui/alpha-worker.js",
+      "bytes": 3003,
+      "sha256": "efdfcf9cc7f28897e853532fa42acb071aab3e4826a412c56124f32880172df7",
+      "publishedPath": "desktop/ui/alpha-worker.js"
+    },
+    {
+      "sourcePath": "desktop/ui/capture.html",
+      "bytes": 375,
+      "sha256": "a5a2d2aed0568695a755b7c16e43cfe8209519efbb7c08dea9bc06d9a4c6c0f8",
+      "publishedPath": "desktop/ui/capture.html"
+    },
+    {
+      "sourcePath": "desktop/ui/capture.js",
+      "bytes": 2168,
+      "sha256": "300137f5aaf167a05b7b8db5860e8dac02a3ab830c7dab0ffdc02b16d297d56c",
+      "publishedPath": "desktop/ui/capture.js"
+    },
+    {
+      "sourcePath": "desktop/ui/chat-entry.js",
+      "bytes": 612,
+      "sha256": "53463ac79129fee9955a6723b0dcd9dc3a40d399503c82d620fc2bf3f1ba586c",
+      "publishedPath": "desktop/ui/chat-entry.js"
+    },
+    {
+      "sourcePath": "desktop/ui/chat.css",
+      "bytes": 3773,
+      "sha256": "9c903186ff295fc2bc0f80d520fe56503f7428d18d7a122fbe67ac23648fd3de",
+      "publishedPath": "desktop/ui/chat.css"
+    },
+    {
+      "sourcePath": "desktop/ui/chat.html",
+      "bytes": 5344,
+      "sha256": "4ddd2ef1d3cbf08b3a744fa679fdad1d3b1c6b21a9e09b80c39850bc29f8e8a5",
+      "publishedPath": "desktop/ui/chat.html"
+    },
+    {
+      "sourcePath": "desktop/ui/chat.js",
+      "bytes": 10621,
+      "sha256": "62312f0edbb56d4b4d39bb6a4870a17295a65a6f37d233fe5b7323c70675df48",
+      "publishedPath": "desktop/ui/chat.js"
+    },
+    {
+      "sourcePath": "desktop/ui/client.js",
+      "bytes": 4769,
+      "sha256": "2ac63b8e1a256d10ee760f74bdd7476bc0b685fe3f909983eca77662dd899f36",
+      "publishedPath": "desktop/ui/client.js"
+    },
+    {
+      "sourcePath": "desktop/ui/input.js",
+      "bytes": 5818,
+      "sha256": "4176a93bb54832b3f1e96b811667629a0dadfa3e26a6b51cc65c5307158bac0d",
+      "publishedPath": "desktop/ui/input.js"
+    },
+    {
+      "sourcePath": "desktop/ui/media-guard.js",
+      "bytes": 14932,
+      "sha256": "ef85ede6163f567243cdf684e909e10642a927fedc90a5760cb37b02a12263f9",
+      "publishedPath": "desktop/ui/media-guard.js"
+    },
+    {
+      "sourcePath": "desktop/ui/membership.css",
+      "bytes": 2761,
+      "sha256": "d961ded29d40588650c9d13a92db060acbddab6cc981b03a972ff95bd9ab0dbd",
+      "publishedPath": "desktop/ui/membership.css"
+    },
+    {
+      "sourcePath": "desktop/ui/membership.js",
+      "bytes": 19811,
+      "sha256": "8646f0ace3d75a6733f60686d0f3c74fb3c42271f03a8cad2e61c56abe789d0c",
+      "publishedPath": "desktop/ui/membership.js"
+    },
+    {
+      "sourcePath": "desktop/ui/money.js",
+      "bytes": 11260,
+      "sha256": "e53e94b16da372b6fe0dbf03b736c98dabd3718275b0801f4cba9603c867c525",
+      "publishedPath": "desktop/ui/money.js"
+    },
+    {
+      "sourcePath": "desktop/ui/render.js",
+      "bytes": 9193,
+      "sha256": "4b09921d7ce85113aff6f4744f8aaeeafb8efde104847d39861e56f9e6e017d1",
+      "publishedPath": "desktop/ui/render.js"
+    },
+    {
+      "sourcePath": "desktop/ui/turn-notice.js",
+      "bytes": 2535,
+      "sha256": "5f20a890679b12d03439848a2d151e502fd3559d6640931178746a3789df77e9",
+      "publishedPath": "desktop/ui/turn-notice.js"
+    },
+    {
+      "sourcePath": "desktop/ui/ui.css",
+      "bytes": 3881,
+      "sha256": "97f98cfb80454802646684dc34baae2144402dc5b0fc56cfa882d954960331a1",
+      "publishedPath": "desktop/ui/ui.css"
+    },
+    {
+      "sourcePath": "desktop/ui/widget.html",
+      "bytes": 6300,
+      "sha256": "c0d02f75a6a57ac0c4328af3342b50532fc750757b64cfe314b1d976a3e25bab",
+      "publishedPath": "desktop/ui/widget.html"
+    },
+    {
+      "sourcePath": "desktop/window-capture.cjs",
+      "bytes": 3411,
+      "sha256": "cacf04a32eb9b5d81c2ae34a57c8a1e07903d1c4ee0d336fc8186e2bff6dbecb",
+      "publishedPath": "desktop/window-capture.cjs"
+    },
+    {
+      "sourcePath": "docs/COPYRIGHT-SOURCE-AUDIT.md",
+      "bytes": 6500,
+      "sha256": "b7552a1d2f12b63e75171fb68e3355c2dec1c2d35b6e091821a2361c5daae7ad",
+      "publishedPath": "docs/COPYRIGHT-SOURCE-AUDIT.md"
+    },
+    {
+      "sourcePath": "docs/DEFAULT-CHARACTER.md",
+      "bytes": 1619,
+      "sha256": "c522e6bf19948ec631e9b7feffea4e07ed86e53f7b262fb25f109b3236e6c2c1",
+      "publishedPath": "docs/DEFAULT-CHARACTER.md"
+    },
+    {
+      "sourcePath": "docs/MEMBERSHIP-ADDON-DEBUG.md",
+      "bytes": 18804,
+      "sha256": "7cd9af2289985bab17f167afd5067bf064b500f27e09abe59bf3cda5fd6c4d82",
+      "publishedPath": "docs/MEMBERSHIP-ADDON-DEBUG.md"
+    },
+    {
+      "sourcePath": "docs/SOURCE-PROVENANCE-SUMMARY.json",
+      "bytes": 2665,
+      "sha256": "13bf11538bb2c43e1b948fe317a1cc4e859ca8e17cadbc208906560c3320ab8d",
+      "publishedPath": "docs/SOURCE-PROVENANCE-SUMMARY.json"
+    },
+    {
+      "sourcePath": "lib/media-validation.mjs",
+      "bytes": 11970,
+      "sha256": "0e61721f4cb09c47ed356e5f1fde7e87dd75f4c85589738c98b46f830cac8a82",
+      "publishedPath": "lib/media-validation.mjs"
+    },
+    {
+      "sourcePath": "lib/resource-store.mjs",
+      "bytes": 6256,
+      "sha256": "960882f7c51534de476422e6215f3d90a7070fa6e7958f86e9f995f31292b191",
+      "publishedPath": "lib/resource-store.mjs"
+    },
+    {
+      "sourcePath": "lib/widget-host.mjs",
+      "bytes": 49299,
+      "sha256": "92ccbf02a5b3a1f7fc5d8af5777808d7f022be7a4f1d6e914401739307d5bf81",
+      "publishedPath": "lib/widget-host.mjs"
+    },
+    {
+      "sourcePath": "package.json",
+      "bytes": 1358,
+      "sha256": "599f2e5f99c557117c3aa5018dc517de835d19d56921b5a7e9c5c2e7c1d38d7e",
+      "publishedPath": "package.json"
+    },
+    {
+      "sourcePath": "runtime/bridge.mjs",
+      "bytes": 5424,
+      "sha256": "1f56d8f4e73151d00dd7a0a2adaff7db35e0ae461d21e49ed9e915a7fcdd7a1e",
+      "publishedPath": "runtime/bridge.mjs"
+    },
+    {
+      "sourcePath": "runtime/companion-presets.mjs",
+      "bytes": 1922,
+      "sha256": "9c4a725742481ada86827946337bd14e6f78c087ad2f765c0330916005a116a0",
+      "publishedPath": "runtime/companion-presets.mjs"
+    },
+    {
+      "sourcePath": "runtime/config.mjs",
+      "bytes": 9092,
+      "sha256": "462e5531103ff351289d032d6ffb4c3e3d9ad3b74e32378246dbcdd3757f9e67",
+      "publishedPath": "runtime/config.mjs"
+    },
+    {
+      "sourcePath": "runtime/dispatcher.mjs",
+      "bytes": 10990,
+      "sha256": "f41c2c68057be073016860b05581cd01726271c75e7acb4783aa4de2ea5c1501",
+      "publishedPath": "runtime/dispatcher.mjs"
+    },
+    {
+      "sourcePath": "runtime/fx.mjs",
+      "bytes": 9631,
+      "sha256": "a9dd368d6c0a29117af6cc5c07d11df32668e92a2034466bb373b36dbea0241f",
+      "publishedPath": "runtime/fx.mjs"
+    },
+    {
+      "sourcePath": "runtime/interjection-policy.mjs",
+      "bytes": 7412,
+      "sha256": "5f889e9bc798cba2f06bbfc750157822668249cd51cb7c2243c8d0a1dcbef868",
+      "publishedPath": "runtime/interjection-policy.mjs"
+    },
+    {
+      "sourcePath": "runtime/ledger.mjs",
+      "bytes": 6421,
+      "sha256": "dc6099ff3d910d65c9213fb8d7aee2f73d2b5da060b3a5a41c57a9dfb56ef4e0",
+      "publishedPath": "runtime/ledger.mjs"
+    },
+    {
+      "sourcePath": "runtime/mcp.mjs",
+      "bytes": 3905,
+      "sha256": "7fc1522fcd4e25bd0f8ae9cad172bf212e739919c65baab2a3a12e8768b8011d",
+      "publishedPath": "runtime/mcp.mjs"
+    },
+    {
+      "sourcePath": "runtime/migration.mjs",
+      "bytes": 1581,
+      "sha256": "afe1022a71bbcd4e2472cb66e8de17b48e0013fae52cdcffd582edbbc3f97b89",
+      "publishedPath": "runtime/migration.mjs"
+    },
+    {
+      "sourcePath": "runtime/paths.mjs",
+      "bytes": 2139,
+      "sha256": "1d915fa03fde3282f5fd8e01bbcecfd53f8d571f70fba9ef4f6512eb6e3ecda4",
+      "publishedPath": "runtime/paths.mjs"
+    },
+    {
+      "sourcePath": "runtime/process.mjs",
+      "bytes": 2957,
+      "sha256": "f94039a67943514c8659f1cc23af30adabfa951f4ef363f0e1ae258cbf3b15e6",
+      "publishedPath": "runtime/process.mjs"
+    },
+    {
+      "sourcePath": "runtime/providers.mjs",
+      "bytes": 8457,
+      "sha256": "6d4ab462df3f90d03395c6e25b488977600fbd4870bdc0a56eb8f71bd24a6267",
+      "publishedPath": "runtime/providers.mjs"
+    },
+    {
+      "sourcePath": "runtime/service.mjs",
+      "bytes": 24559,
+      "sha256": "198476c683103c7910db742961c1d40b24cf553ce9b9743592eb276b23f47406",
+      "publishedPath": "runtime/service.mjs"
+    },
+    {
+      "sourcePath": "runtime/session-monitor.mjs",
+      "bytes": 13363,
+      "sha256": "fae2908b9ffc86624c51c26cc456212608d84c337b0f44a874a07fd3b9cfc797",
+      "publishedPath": "runtime/session-monitor.mjs"
+    },
+    {
+      "sourcePath": "runtime/session-worker.mjs",
+      "bytes": 1711,
+      "sha256": "442b9d55881b85d0749298cbcc0503ac22c5231b7aba80b90d8d0d7bb09b6dc7",
+      "publishedPath": "runtime/session-worker.mjs"
+    },
+    {
+      "sourcePath": "runtime/subscription-executable.mjs",
+      "bytes": 8497,
+      "sha256": "4e770172c6084fd3fdbc16650ffa00f8e2d12ffb718f26db1150ebce94a8ba50",
+      "publishedPath": "runtime/subscription-executable.mjs"
+    },
+    {
+      "sourcePath": "runtime/subscription-rpc.mjs",
+      "bytes": 12829,
+      "sha256": "425f77f25c6b5ead10d746c4aac6b9c1eccd7be24a70a6888010e9daa9759d73",
+      "publishedPath": "runtime/subscription-rpc.mjs"
+    },
+    {
+      "sourcePath": "runtime/subscription.mjs",
+      "bytes": 9706,
+      "sha256": "a88e595ca853de9ffeb6d6c20b7cbe1b2a2d321431d3182a4adf3157d4196566",
+      "publishedPath": "runtime/subscription.mjs"
+    },
+    {
+      "sourcePath": "runtime/turn-journal.mjs",
+      "bytes": 4016,
+      "sha256": "347d751d1399a75f52237f8f472c151bd054e141ffde3e0fec82b2ad49a738aa",
+      "publishedPath": "runtime/turn-journal.mjs"
+    },
+    {
+      "sourcePath": "runtime/vision-chat.mjs",
+      "bytes": 18737,
+      "sha256": "bbb3a23e77c4592f7448c58ad1ffb11ed36ab67ae91fb77ec81fde60bee1eb8b",
+      "publishedPath": "runtime/vision-chat.mjs"
+    },
+    {
+      "sourcePath": "scripts/build-launcher.ps1",
+      "bytes": 3776,
+      "sha256": "9e95238d7c28636535beab943274a13c772c947b41ce86fa10af4ca9e0055616",
+      "publishedPath": "scripts/build-launcher.ps1"
+    },
+    {
+      "sourcePath": "scripts/control.mjs",
+      "bytes": 1264,
+      "sha256": "22bc08be8ba6f63f7187e7dd6a4e00202578b447280e4ac0ff16ee05dbc1f6ed",
+      "publishedPath": "scripts/control.mjs"
+    },
+    {
+      "sourcePath": "scripts/install-desktop.mjs",
+      "bytes": 304,
+      "sha256": "a794f3f7d8016a5b56bbe1cab531ada91ce5858bb16f22ca63670e9550c89949",
+      "publishedPath": "scripts/install-desktop.mjs"
+    },
+    {
+      "sourcePath": "scripts/install-follow.ps1",
+      "bytes": 13660,
+      "sha256": "d58990c57ab45d7ebef7bd50bbe3cf8d0f0cf08a287750b31fb54d09a755114d",
+      "publishedPath": "scripts/install-follow.ps1"
+    },
+    {
+      "sourcePath": "scripts/install-macos.mjs",
+      "bytes": 8034,
+      "sha256": "f0a3ec4cb34f83a53e8af6c235a96f8874a2c829b5d36dd602e8585024f901da",
+      "publishedPath": "scripts/install-macos.mjs"
+    },
+    {
+      "sourcePath": "scripts/probe-macos.mjs",
+      "bytes": 982,
+      "sha256": "4b89ddec118d4941f8d2941350d89e9572e1b4e96fdcd3c2012bb1b1d65e4930",
+      "publishedPath": "scripts/probe-macos.mjs"
+    },
+    {
+      "sourcePath": "scripts/rollback-0.2.0.ps1",
+      "bytes": 5898,
+      "sha256": "87c6e8d85346b06d2698208a694f84409565b9a3ef11209aac6d6b08fb98b017",
+      "publishedPath": "scripts/rollback-0.2.0.ps1"
+    },
+    {
+      "sourcePath": "scripts/uninstall-follow.ps1",
+      "bytes": 1978,
+      "sha256": "57430fbb8304b2f1b16b39523d7af8a6045f1b0b8d2e2f97827f3cc34202eda2",
+      "publishedPath": "scripts/uninstall-follow.ps1"
+    },
+    {
+      "sourcePath": "scripts/uninstall-macos.mjs",
+      "bytes": 1823,
+      "sha256": "64cb5fedbcb6a41b8bfd6ed1f3eca33ac7610a573ce3de093b7802ab240bd39f",
+      "publishedPath": "scripts/uninstall-macos.mjs"
+    },
+    {
+      "sourcePath": "skills/api-balance-whale/SKILL.md",
+      "bytes": 8853,
+      "sha256": "8a86a4ee34aa75041b8f9fdee8e883286bb0551b1a578e41f414bd02d26654ae",
+      "publishedPath": "skills/api-balance-whale/SKILL.md"
+    },
+    {
+      "sourcePath": "vendor/smol-toml/LICENSE",
+      "bytes": 1499,
+      "sha256": "fa5659948374d4f555594f47f6da073b40dc503e921aeeece30df4362b3051a5",
+      "publishedPath": "vendor/smol-toml/LICENSE"
+    },
+    {
+      "sourcePath": "vendor/smol-toml/README.md",
+      "bytes": 23654,
+      "sha256": "6170186cc4c4e3e5b755e5d54939d01a4e2c5a930a650dde0ee0d3eef04cc3a2",
+      "publishedPath": "vendor/smol-toml/README.md"
+    },
+    {
+      "sourcePath": "vendor/smol-toml/dist/date.d.ts",
+      "bytes": 2098,
+      "sha256": "c7ad3531c131f2b5b246b2d208b75c5403475ad155b7661fa2d673104b806791",
+      "publishedPath": "vendor/smol-toml/dist/date.d.ts"
+    },
+    {
+      "sourcePath": "vendor/smol-toml/dist/date.js",
+      "bytes": 4942,
+      "sha256": "fcc8fcce1a3e8660ac572fb827c20e49d269ad50686c085bb72c3c50771323d5",
+      "publishedPath": "vendor/smol-toml/dist/date.js"
+    },
+    {
+      "sourcePath": "vendor/smol-toml/dist/error.d.ts",
+      "bytes": 1878,
+      "sha256": "c5ada15420e52bcc8a451a7c4f2daff318e6d0bf5f8c691b25158555a4508f0e",
+      "publishedPath": "vendor/smol-toml/dist/error.d.ts"
+    },
+    {
+      "sourcePath": "vendor/smol-toml/dist/error.js",
+      "bytes": 2787,
+      "sha256": "28dbfc2871c0707f97cebb5a8be7e343a9cee58250b5814813d748b90d9e0d3b",
+      "publishedPath": "vendor/smol-toml/dist/error.js"
+    },
+    {
+      "sourcePath": "vendor/smol-toml/dist/extract.js",
+      "bytes": 3359,
+      "sha256": "851ddbb4ae8571fda887a03511a6688d9b168c49deceda34243ad77d6f2a39ec",
+      "publishedPath": "vendor/smol-toml/dist/extract.js"
+    },
+    {
+      "sourcePath": "vendor/smol-toml/dist/index.cjs",
+      "bytes": 22907,
+      "sha256": "195ca51fc784617d361af3697756a896518e45bec4e35976baec2dffd656cb8f",
+      "publishedPath": "vendor/smol-toml/dist/index.cjs"
+    },
+    {
+      "sourcePath": "vendor/smol-toml/dist/index.d.ts",
+      "bytes": 2208,
+      "sha256": "b741d3219913446a93fe07e00dafe9fa3e857fa478e85b483cbf2e11d84521a5",
+      "publishedPath": "vendor/smol-toml/dist/index.d.ts"
+    },
+    {
+      "sourcePath": "vendor/smol-toml/dist/index.js",
+      "bytes": 1883,
+      "sha256": "ded3ee91f3ce1ef746f6b57459b0c68475658eacb8e88fd18336a5408de009a1",
+      "publishedPath": "vendor/smol-toml/dist/index.js"
+    },
+    {
+      "sourcePath": "vendor/smol-toml/dist/parse.d.ts",
+      "bytes": 2058,
+      "sha256": "ebb272a8381742aad17e0445e0872c0496561e4bfa465576a70efdb23117a99f",
+      "publishedPath": "vendor/smol-toml/dist/parse.d.ts"
+    },
+    {
+      "sourcePath": "vendor/smol-toml/dist/parse.js",
+      "bytes": 5754,
+      "sha256": "92d512a52a44f72b3258e817e4cf3e6d576ffc5059666b9fe27341e7871ecead",
+      "publishedPath": "vendor/smol-toml/dist/parse.js"
+    },
+    {
+      "sourcePath": "vendor/smol-toml/dist/primitive.js",
+      "bytes": 11015,
+      "sha256": "64418c1b056c86d24053caee06ec44bd48187c061b7ff09c21159f2e0e5dd8f5",
+      "publishedPath": "vendor/smol-toml/dist/primitive.js"
+    },
+    {
+      "sourcePath": "vendor/smol-toml/dist/stringify.d.ts",
+      "bytes": 1759,
+      "sha256": "c9a75924aa75b4e60542ff06437b3abd9679ee9f740245080fbe528f05fb8763",
+      "publishedPath": "vendor/smol-toml/dist/stringify.d.ts"
+    },
+    {
+      "sourcePath": "vendor/smol-toml/dist/stringify.js",
+      "bytes": 7272,
+      "sha256": "a96ec2fa840067eff015a38a18849f1e3b2ff2e9cb9ad52cd9266497ad12b3de",
+      "publishedPath": "vendor/smol-toml/dist/stringify.js"
+    },
+    {
+      "sourcePath": "vendor/smol-toml/dist/struct.js",
+      "bytes": 7009,
+      "sha256": "dbd94692ef8225459b29232f23e82fd67ad84002349e67458456a09695f063b0",
+      "publishedPath": "vendor/smol-toml/dist/struct.js"
+    },
+    {
+      "sourcePath": "vendor/smol-toml/dist/util.d.ts",
+      "bytes": 2130,
+      "sha256": "e08c5ba5f398c27b34b966b1b8427e7599394927c5397f765b7a085cd7f4541a",
+      "publishedPath": "vendor/smol-toml/dist/util.d.ts"
+    },
+    {
+      "sourcePath": "vendor/smol-toml/dist/util.js",
+      "bytes": 3404,
+      "sha256": "332fda936c5d81a493d1a7dfa574221d27d585657b337e5db466cc26aec26302",
+      "publishedPath": "vendor/smol-toml/dist/util.js"
+    },
+    {
+      "sourcePath": "vendor/smol-toml/package.json",
+      "bytes": 1548,
+      "sha256": "fa2995d429c856669968d6281c14e6be93a40cd404dad43aa2e4599608f20bdc",
+      "publishedPath": "vendor/smol-toml/package.json"
+    },
+    {
+      "sourcePath": "用户使用方式.md",
+      "bytes": 7796,
+      "sha256": "3d88ab821369a55f83c2e41a7f5f5390d077f31da61e1f7511b87106f117b382",
+      "publishedPath": "用户使用方式.md"
+    }
+  ],
+  "releaseChanges": [
+    {
+      "path": "desktop/main.cjs",
+      "reason": "Use the user-supplied default character for the tray or plugin icons instead of an excluded upstream image."
+    },
+    {
+      "path": ".codex-plugin/plugin.json",
+      "reason": "Use the user-supplied default character for the tray or plugin icons instead of an excluded upstream image."
+    }
+  ]
+}

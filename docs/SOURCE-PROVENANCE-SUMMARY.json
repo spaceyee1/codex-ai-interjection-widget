@@ -1,0 +1,61 @@
+{
+  "auditedOn": "2026-10-06",
+  "scope": "Current Codex cooperation extension and official runtime; not DSH or a worldwide code similarity search.",
+  "baseline": {
+    "zip": "codex-小鲸鱼AI插话-0.2.4-spceyee.zip",
+    "sha256": "522763fd4f4fac77eb12d02f74a072c55d102560ccf56cb81512e4ccaff9f494",
+    "files": 100,
+    "unchanged": 90,
+    "modified": 10,
+    "removed": 0
+  },
+  "smolToml": {
+    "name": "smol-toml",
+    "version": "1.8.0",
+    "license": "BSD-3-Clause",
+    "registryUrl": "https://registry.npmjs.org/smol-toml/1.8.0",
+    "tarballUrl": "https://registry.npmjs.org/smol-toml/-/smol-toml-1.8.0.tgz",
+    "tarballSha256": "1fc995be91cdb777fc13e20c2edfebaaf60ef4e4d2d5331caef2837b04d37892",
+    "tarballSha1": "dc5e0936825f1fef37bdf2c569081f709d8a009f",
+    "registryShasumMatches": true,
+    "registrySha512IntegrityMatches": true,
+    "publishedFiles": 19,
+    "localFiles": 19,
+    "byteIdenticalFiles": 19,
+    "missing": [],
+    "extra": [],
+    "distFiles": 16,
+    "allDistFilesRetainCopyrightSpdxConditionsAndDisclaimer": true,
+    "copyrightInLicense": "Copyright (c) Squirrel Chat et al., All rights reserved.",
+    "authorInPackageJson": "Cynthia Rey",
+    "licenseSha256": "fa5659948374d4f555594f47f6da073b40dc503e921aeeece30df4362b3051a5",
+    "downloadMethod": "Public npm metadata and archive were read into memory; no npm archive was written during verification.",
+    "gitHead": null,
+    "conclusion": "Exact match to the published package; complete BSD-3-Clause notice is already retained. No rewrite candidate identified in this dependency. This library is not excluded as collaboration-owned code."
+  },
+  "electron": {
+    "version": "44.3.0",
+    "zip": "electron-v44.3.0-win32-x64.zip",
+    "sha256": "26bf9a617d58d81772b3d68305d59ee48272969c15083c06db634a77358a8d9d",
+    "officialChecksums": "https://github.com/electron/electron/releases/download/v44.3.0/SHASUMS256.txt",
+    "officialFiles": 73,
+    "identicalFiles": 73,
+    "missing": 0,
+    "extra": 0,
+    "noticesSha256": "7b328b8c7463ac9bfc7dc648c751533517c8441a0b5b21047d6c0b2620e60d70"
+  },
+  "ffmpeg": {
+    "commit": "2b68d2babae73714846961fb0ee47e3b3d2e39a9",
+    "sourceTree": "c60e6b597c312801ce91d81110442d40fbf4d672",
+    "regularFiles": 11015,
+    "gitTreeMatches": true,
+    "patchApplyCheck": true,
+    "recompiled": false,
+    "officialCiArgsVerified": false
+  },
+  "limits": [
+    "Source identity does not establish media redistribution permission.",
+    "Exact Microsoft SDK terms and current DXIL binary-specific license are not independently fully verified.",
+    "No worldwide source similarity search or blanket rights clearance."
+  ]
+}
