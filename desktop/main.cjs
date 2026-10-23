@@ -123,7 +123,15 @@ function pauseAndQuit() {
   }
   app.quit();
 }
-function isMainFrame(event) { return event.sender === window?.webContents && event.senderFrame === window.webContents.mainFrame; }
+function isMainFrame(event) {
+  try {
+    if (quitting || !window || window.isDestroyed()) return false;
+    const contents = window.webContents;
+    if (!contents || contents.isDestroyed() || event?.sender !== contents) return false;
+    const frame = event.senderFrame;
+    return !!frame && frame === contents.mainFrame;
+  } catch { return false; }
+}
 async function openWebLink(value, gestureRequired = true) {
   if (gestureRequired && (!trustedGestureAt || Date.now() - trustedGestureAt > 1000)) return false;
   trustedGestureAt = 0;
@@ -275,8 +283,8 @@ else {
     window.webContents.setWindowOpenHandler(({ url }) => { openWebLink(url).catch(() => {}); return { action: 'deny' }; });
     window.webContents.on('will-navigate', (event, url) => { if (!url.startsWith(UI_ORIGIN + '/')) event.preventDefault(); });
     session.defaultSession.setPermissionRequestHandler((_web, _permission, callback) => callback(false));
-    ipcMain.on('whale-storage', event => { event.returnValue = event.sender === window.webContents ? values() : {}; });
-    ipcMain.on('whale-save-storage', (event, input) => { if (event.sender === window.webContents) storeValues(input); });
+    ipcMain.on('whale-storage', event => { event.returnValue = isMainFrame(event) ? values() : {}; });
+    ipcMain.on('whale-save-storage', (event, input) => { if (isMainFrame(event)) storeValues(input); });
     ipcMain.on('whale-user-gesture', event => { if (isMainFrame(event)) trustedGestureAt = Date.now(); });
     ipcMain.handle('whale-open-chat', async event => { if (!isMainFrame(event)) return false; await chatController.open(); return true; });
     ipcMain.handle('whale-companion', async (event, action, input) => {
@@ -303,19 +311,19 @@ else {
       return false;
     });
     ipcMain.on('whale-ready', event => {
-      if (event.sender !== window.webContents) return;
+      if (!isMainFrame(event)) return;
       markStartup('imageAndInputReady');
       try { fs.rmSync(path.join(dataDir, 'desktop-error.json'), { force: true }); } catch {}
       rendererReady = true; visibility(); flushCommands(); invalidate(); sendCursor(true);
       if (!fixture) setTimeout(() => { chatController?.autoStart().catch(() => {}); }, 1200);
     });
     ipcMain.on('whale-interactive', (event, enabled) => {
-      if (event.sender !== window.webContents || typeof enabled !== 'boolean' || enabled === inputEnabled) return;
+      if (!isMainFrame(event) || typeof enabled !== 'boolean' || enabled === inputEnabled) return;
       inputEnabled = enabled;
       window.setIgnoreMouseEvents(!enabled, { forward: true });
     });
     ipcMain.on('whale-keyboard-focus', (event, editing) => {
-      if (event.sender === window.webContents && typeof editing === 'boolean') setKeyboardFocus(editing);
+      if (isMainFrame(event) && typeof editing === 'boolean') setKeyboardFocus(editing);
     });
     const cursorPoll = setInterval(sendCursor, 50);
     visibilityWatchdog = setInterval(assertVisibility, 1000);

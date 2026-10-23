@@ -2,7 +2,7 @@
 
 跟随 Codex 桌面窗口的透明伴随挂件，保留小 AI 插话、气泡聊天、API 余额与记账，并增加 Codex 会员与额度展示。
 
-**v1.0.0 首版发布。** 支持小 AI 插话、气泡聊天、桌面跟随和会员额度展示，默认使用下方透明角色图片，托盘与插件图标同步采用这张图。感谢 **[Yang-huai406](https://github.com/Yang-huai406)**、**[MeteorNOX](https://github.com/MeteorNOX)** 及所有相关贡献者，完整名单见[鸣谢](CREDITS.md)。
+**v1.0.1 已发布：修复窗口销毁后 `Object has been destroyed` 报错，提供 Windows EXE 安装包。** 其他功能代码保持原样。感谢 **[Yang-huai406](https://github.com/Yang-huai406)**、**[MeteorNOX](https://github.com/MeteorNOX)** 及所有相关贡献者，完整名单见[鸣谢](CREDITS.md)。
 
 仓库：[spaceyee1/codex-ai-interjection-widget](https://github.com/spaceyee1/codex-ai-interjection-widget)。本项目为个人改版，与 OpenAI 官方发布无关。
 
@@ -12,9 +12,17 @@
 
 包含挂件源代码、Codex 插件元数据、原许可文件、`smol-toml` 源码依赖、默认角色图片及使用文档。文件校验与排除项见[文件清单](SOURCE-SNAPSHOT.json)，内部构建标识与验证记录见 [DEBUG.md](DEBUG.md)。
 
-**这是需要自行准备运行条件的源码版。** `assets/default-character.png` 按用户本次明确要求随包发布，并用于默认角色、托盘和插件图标。它与原安装版的默认图同字节；已有自定义角色选择不会被强行重置，切回默认角色会使用这张图。该图片单独登记来源，不纳入代码 MIT，也不把用户提供等同于用户原创。
+**源码 ZIP 需要自行准备运行条件；Windows 用户可直接下载下方 EXE。** 源码版的 `assets/default-character.png` 按用户本次明确要求随包发布，并用于默认角色、托盘和插件图标。它与原安装版的默认图同字节；已有自定义角色选择不会被强行重置，切回默认角色会使用这张图。该图片单独登记来源，不纳入代码 MIT，也不把用户提供等同于用户原创。
 
-公开包不包含其余 **10 个上游图片、动图和音效**，也不包含 Electron、离线安装 EXE、用户配置、密钥、账本、聊天记录或本机运行日志。现有材料不足以证明这 10 个上游媒体可以在这个新仓库公开再分发，因此仅登记来源和哈希；这不等于认定素材侵权。需要原气泡动图或预设音效时，应自行准备有权使用的资源；未准备时不要选用相应预设，并关闭相应音效。资源要求见 [ASSETS.md](ASSETS.md)。
+源码仓库与源码 ZIP 不包含其余 **10 个上游图片、动图和音效**，也不包含 Electron、用户配置、密钥、账本、聊天记录或本机运行日志。源码版继续沿用素材排除范围，资源要求见 [ASSETS.md](ASSETS.md)。完整 EXE 保留原本机包的组件和素材，并内置相应许可及固定源码材料；来源声明和授权边界保持原样，见[安装器说明](installer/README.md)。
+
+## Windows EXE 安装
+
+**[下载 CodexWhale-v1.0.1-Setup-x64.exe](https://github.com/spaceyee1/codex-ai-interjection-widget/releases/download/v1.0.1/CodexWhale-v1.0.1-Setup-x64.exe)** · [发布页与校验文件](https://github.com/spaceyee1/codex-ai-interjection-widget/releases/tag/v1.0.1)
+
+需要 Windows 10/11 x64 和已安装的 Codex 桌面应用。打开 EXE，点击“安装并启用”，再打开 Codex。运行组件已内置，无需额外安装 Node.js、npm 或原版挂件；保留已有个人设置，朋友自行填写自己的 API Key。
+
+本版只修复已销毁窗口上的 IPC 访问；完整包其他 225 个文件与本机原安装包字节相同。范围和验证见 [v1.0.1 说明](docs/RELEASE-v1.0.1.md)。
 
 ## 功能
 

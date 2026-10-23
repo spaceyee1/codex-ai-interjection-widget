@@ -1,0 +1,1 @@
+using System.Reflection;[assembly:AssemblyTitle("Codex Whale Membership Installer")][assembly:AssemblyVersion("0.2.4.6")]internal static class BuildInfo{public const string Version="0.2.4+membership.6";public const string PayloadHash="492000e08fe96dccb406fdc942709769d948c2da323aa3f179e085023b693a2e";}

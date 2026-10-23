@@ -1,9 +1,9 @@
 {
-  "release": "v1.0.0",
-  "captureDate": "2026-10-12",
+  "release": "v1.0.1",
+  "captureDate": "2026-10-23",
   "sourceVersion": "0.2.4+membership.5",
   "sourceKind": "snapshot of the currently running local Codex widget app",
-  "notes": "This repository release retains installed runtime versions. Original source hashes are recorded in sha256; two icon-reference adaptations have separate publishedSha256 values. The user-supplied default character is included; ten upstream media files remain excluded. New release documentation is outside the installed-source manifest.",
+  "notes": "This repository release retains installed runtime versions. Original source hashes are recorded in sha256; two icon-reference adaptations have separate publishedSha256 values. The user-supplied default character is included; ten upstream media files remain excluded. New release documentation is outside the installed-source manifest. v1.0.1 applies the destroyed-window IPC guards only; previous icon adaptations remain. The complete Windows installer retains the local membership.5 package except desktop/main.cjs and uses installer build membership.6.",
   "files": [
     {
       "sourcePath": ".codex-plugin/plugin.json",
@@ -215,8 +215,8 @@
       "bytes": 25407,
       "sha256": "128fa451e969baf57131a0082dced64f088d4843f4669d315716a8cd4a72e210",
       "publishedPath": "desktop/main.cjs",
-      "publishedSha256": "ca70412e4267c6789136bda389c6e9f45f0b04ad280cae1f03ef3a0f8e945aa0",
-      "releaseChange": "Use the user-supplied default character for the tray or plugin icons instead of an excluded upstream image."
+      "publishedSha256": "3d23c9fae8d4269391e57fb35b27dd894cbc7f756a0adcac0972c3f956d6b8ab",
+      "releaseChange": "Retain the previous public icon adaptation; ignore IPC after the main window or webContents is destroyed. publishedSha256 uses Git-normalized LF bytes."
     },
     {
       "sourcePath": "desktop/preload.cjs",
